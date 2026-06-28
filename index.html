@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Manjula Subhash Nair — Marketing Strategist, Public Relations Expert, Brand Consultant, Go-To-Market Advisor, Startup Mentor. Founder of Global CMO Partners & Creative Bharat." />
+  <meta name="keywords"
+    content="Manjula Nair, CMO, Marketing Strategist, Brand Strategy, PR Consultant, Startup Mentor, India, Go-To-Market" />
+  <meta property="og:title" content="Manjula Subhash Nair | Marketing & Brand Strategist" />
+  <meta property="og:description"
+    content="25+ years building brands, leading communications, and transforming businesses across India and globally." />
+  <meta property="og:type" content="website" />
+  <title>Manjula Subhash Nair | Marketing Strategist & Brand Leader</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    /* ===========================
+       DESIGN TOKENS
+    =========================== */
+    :root {
+      --navy: #071A2F;
+      --navy-mid: #0D2644;
+      --royal: #0F62FE;
+      --royal-soft: #2D7BFF;
+      --gold: #C8A64D;
+      --gold-light: #DEC07A;
+      --white: #FFFFFF;
+      --off-white: #F7F8FA;
+      --gray-100: #F0F1F4;
+      --gray-200: #E2E4EA;
+      --gray-400: #9AA1B4;
+      --gray-700: #444C60;
+      --dark: #1A1F2E;
+      --text: #222530;
+      --emerald: #10B981;
+
+      --font-display: 'Cormorant Garamond', serif;
+      --font-body: 'Inter', sans-serif;
+
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-xl: 32px;
+
+      --shadow-sm: 0 2px 8px rgba(7, 26, 47, 0.08);
+      --shadow-md: 0 8px 32px rgba(7, 26, 47, 0.12);
+      --shadow-lg: 0 20px 60px rgba(7, 26, 47, 0.16);
+      --shadow-gold: 0 4px 24px rgba(200, 166, 77, 0.25);
+
+      --trans-fast: 0.2s ease;
+      --trans-med: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      --trans-slow: 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); color: var(--text); background: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+    .section { padding: 100px 0; }
+    .section-label { font-family: var(--font-body); font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 16px; }
+    .section-title { font-family: var(--font-display); font-size: clamp(36px, 5vw, 58px); font-weight: 600; line-height: 1.1; color: var(--navy); margin-bottom: 20px; }
+    .section-title.light { color: var(--white); }
+    .section-subtitle { font-size: 17px; line-height: 1.7; color: var(--gray-700); max-width: 580px; }
+    .section-subtitle.light { color: rgba(255, 255, 255, 0.65); }
+
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    /* NAV */
+    #navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 20px 0; transition: all 0.4s ease; }
+    #navbar.scrolled { background: rgb(3, 35, 72); backdrop-filter: blur(24px); border-bottom: 1px solid rgb(255, 183, 2); box-shadow: 0 15px 40px rgba(0,0,0,.25); padding: 14px 0; }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+    .nav-logo { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--white); letter-spacing: 0.02em; }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display:flex; gap:18px; position:relative; align-items:center; }
+    .nav-links a { color: #fff; position:relative; display:inline-flex; align-items:center; justify-content:center; padding:12px 18px; border-radius:50px; transition:.35s ease; z-index:2; font-weight:500; }
+    .nav-indicator { position:absolute; top:50%; left:0; height:42px; width:0; transform:translateY(-50%); border-radius:50px; background:rgba(255,255,255,.08); border:2px solid rgb(255,185,7); backdrop-filter:blur(20px); box-shadow:0 0 20px rgba(200,166,77,.25),0 0 40px rgba(15,98,254,.18),inset 0 0 15px rgba(255,255,255,.08); transition:left .45s cubic-bezier(.22,1,.36,1),width .45s cubic-bezier(.22,1,.36,1); z-index:1; pointer-events:none; }
+    .nav-links a.active { color:#ffffff; text-shadow:0 0 10px rgba(255,183,0,0.8); }
+    .nav-links a:hover { color:white; transform:translateY(-2px); }
+    .nav-indicator { animation:navGlow 3s ease-in-out infinite; }
+    @keyframes navGlow { 0%,100%{box-shadow:0 0 20px rgba(200,166,77,.25),0 0 40px rgba(15,98,254,.15);}50%{box-shadow:0 0 30px rgba(200,166,77,.55),0 0 60px rgba(15,98,254,.30);} }
+    .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 10px 22px; border-radius: 100px; font-weight: 600 !important; font-size: 13px !important; letter-spacing: 0.04em; transition: background var(--trans-fast), transform var(--trans-fast) !important; }
+    .nav-cta:hover { background: var(--gold-light) !important; transform: translateY(-1px); }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .nav-hamburger span { width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all 0.3s ease; }
+
+    /* HERO */
+    #hero { min-height: 100vh; background: var(--navy); position: relative; overflow: hidden; display: flex; align-items: center; }
+    .hero-gradient { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 60% at 70% 50%, rgba(15,98,254,0.18) 0%, transparent 60%), radial-gradient(ellipse 40% 40% at 20% 80%, rgba(200,166,77,0.10) 0%, transparent 60%), radial-gradient(ellipse 30% 30% at 85% 15%, rgba(200,166,77,0.08) 0%, transparent 50%); pointer-events: none; }
+    .hero-grid-pattern { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; }
+    .hero-inner { display: grid; grid-template-columns: 1fr 380px; gap: 40px; align-items: center; max-width: 1200px; margin: auto; min-height: 100vh; padding: 90px 40px 30px; position: relative; z-index: 3; }
+    .hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 28px; }
+    .hero-eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--gold); }
+    .hero-headline { font-family: var(--font-display); font-size: clamp(48px, 6vw, 76px); font-weight: 300; line-height: 1.05; color: var(--white); margin-bottom: 28px; }
+    .hero-headline strong { font-weight: 700; display: block; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-headline em { font-style: italic; font-weight: 300; }
+    .hero-roles { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+    .hero-role-tag { font-size: 12px; font-weight: 500; letter-spacing: 0.05em; color: rgb(255,255,255); padding: 6px 14px; border: 1px solid rgb(0,255,242); border-radius: 100px; backdrop-filter: blur(8px); }
+    .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn-primary { background: var(--gold); color: var(--navy); padding: 14px 32px; border-radius: 100px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; transition: all var(--trans-fast); display: inline-flex; align-items: center; gap: 8px; }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: var(--shadow-gold); }
+    .btn-outline { color: rgb(0,255,238); padding: 14px 32px; border-radius: 100px; font-size: 14px; font-weight: 500; letter-spacing: 0.04em; border: 2px solid rgb(255,255,255); transition: all var(--trans-fast); display: inline-flex; align-items: center; gap: 8px; }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+
+    /* =============================================
+       FIX 1 — Hero image card: no more overlapping
+    ============================================= */
+    .hero-image-frame { position: relative; margin-top: -40px; }
+    .hero-image-wrap {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      background: linear-gradient(160deg, rgba(15,98,254,0.2) 0%, rgba(200,166,77,0.15) 100%);
+      border: 1px solid rgba(200,166,77,0.2);
+    }
+    .hero-image-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background: linear-gradient(160deg, rgba(13,38,68,0.8) 0%, rgba(7,26,47,0.95) 100%);
+      overflow: hidden;
+    }
+    .hero-image {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      max-height: 78%;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 0;
+      box-shadow: none;
+      flex-shrink: 0;
+      display: block;
+    }
+    .name-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 16px 14px;
+      padding: 10px 20px;
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      color: #fff;
+      border: 1.5px solid rgba(255,255,255,.45);
+      border-radius: 999px;
+      background: rgba(0,247,255,0.08);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 0 0 1px rgba(255,255,255,.08) inset, 0 10px 30px rgba(0,0,0,.25);
+      overflow: hidden;
+      transition: .35s ease;
+      width: calc(100% - 32px);
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .name-label:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,.9);
+      box-shadow: 0 15px 35px rgba(0,0,0,.35), 0 0 20px rgba(255,255,255,.18);
+    }
+    .hs-shine { position:relative; overflow:hidden; }
+    .hs-shine::after { content:''; position:absolute; top:0; left:-150%; width:60%; height:100%; background:linear-gradient(120deg, transparent 0%, rgba(255,255,255,.45) 50%, transparent 100%); transform:skewX(-20deg); animation:hs-shine-move 3s linear infinite; }
+    @keyframes hs-shine-move { 0%{left:-150%;}100%{left:160%;} }
+    .hero-image-badge { position: absolute; bottom: -18px; left: 50%; transform: translateX(-50%); background: var(--gold); color: var(--navy); padding: 10px 24px; border-radius: 100px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; box-shadow: var(--shadow-gold); }
+    .hero-stats { display: flex; gap: 24px; margin-top: 25px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.08); }
+    .hero-stat { flex: 1; }
+    .hero-stat-number { font-family: var(--font-display); font-size: 36px; font-weight: 700; color: var(--white); line-height: 1; }
+    .hero-stat-number span { color: var(--gold); }
+    .hero-stat-label { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 4px; letter-spacing: 0.03em; }
+    .floating-icon { position: absolute; border-radius: 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); backdrop-filter: blur(12px); padding: 14px; animation: float 6s ease-in-out infinite; pointer-events: none; z-index: 1; }
+    .floating-icon svg { width: 24px; height: 24px; }
+    .fi-1 { top: 22%; left: -1%; animation-delay: 0s; }
+    .fi-2 { top: 58%; right: -1%; animation-delay: 2s; }
+    .fi-3 { bottom: 18%; left: 1%; animation-delay: 4s; }
+    @media (min-width: 769px) and (max-width: 1200px) {
+      .floating-icon { opacity: 0.45; transform: scale(0.8); }
+      .fi-1 { left: -2%; }
+      .fi-2 { right: -2%; }
+      .fi-3 { left: -1%; }
+    }
+    @media (min-width: 1201px) {
+      .floating-icon { opacity: 0.7; }
+      .fi-1 { left: 0.5%; }
+      .fi-2 { right: 0.5%; }
+      .fi-3 { left: 1%; }
+    }
+    @keyframes float { 0%,100%{transform:translateY(0px);}50%{transform:translateY(-12px);} }
+
+    /* ABOUT */
+    #about { background: var(--white); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .about-text p { font-size: 16px; line-height: 1.8; color: var(--gray-700); margin-bottom: 20px; }
+    .about-text p:first-of-type { font-family: var(--font-display); font-size: 22px; line-height: 1.6; color: var(--text); font-weight: 400; }
+    .about-companies { display: flex; flex-direction: column; gap: 16px; }
+    .about-company-card { background: var(--off-white); border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 18px 22px; display: flex; align-items: center; gap: 16px; transition: all var(--trans-med); }
+    .about-company-card:hover { border-color: var(--gold); background: var(--white); box-shadow: var(--shadow-md); transform: translateX(6px); }
+    .company-icon { width: 44px; height: 44px; background: var(--navy); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--gold); }
+    .company-name { font-size: 15px; font-weight: 600; color: var(--text); }
+    .company-role { font-size: 12px; color: var(--gray-400); margin-top: 2px; }
+    .about-pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 32px; }
+    .about-pillar { background: var(--navy); color: var(--white); padding: 16px 18px; border-radius: var(--radius-md); font-size: 13px; font-weight: 500; display: flex; align-items: center; gap: 10px; }
+    .pillar-dot { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+
+    /* IMPACT */
+    #impact { background: var(--navy); padding: 80px 0; position: relative; overflow: hidden; }
+    #impact::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 50% 80% at 50% 50%, rgba(15,98,254,0.12) 0%, transparent 70%); pointer-events: none; }
+    .impact-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; background: rgba(255,255,255,0.06); border-radius: var(--radius-lg); overflow: hidden; position: relative; z-index: 2; }
+    .impact-item { background: rgba(255,255,255,0.02); padding: 40px 24px; text-align: center; transition: background var(--trans-med); }
+    .impact-item:hover { background: rgba(15,98,254,0.1); }
+    .impact-number { font-family: var(--font-display); font-size: 48px; font-weight: 700; color: var(--white); line-height: 1; margin-bottom: 8px; }
+    .impact-number .suffix { color: var(--gold); }
+    .impact-label { font-size: 12px; color: rgba(255,255,255,0.45); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.4; }
+
+    /* EXPERTISE */
+    #expertise { background: var(--off-white); }
+    .expertise-header { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 64px; align-items: end; }
+    .expertise-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+    .expertise-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 28px 20px; text-align: center; transition: all var(--trans-med); cursor: default; }
+    .expertise-card:hover { border-color: var(--royal); box-shadow: var(--shadow-md); transform: translateY(-6px); background: var(--navy); }
+    .expertise-card:hover .expertise-icon { background: rgba(200,166,77,0.15); }
+    .expertise-card:hover .expertise-icon svg path,.expertise-card:hover .expertise-icon svg rect,.expertise-card:hover .expertise-icon svg circle,.expertise-card:hover .expertise-icon svg polyline,.expertise-card:hover .expertise-icon svg line { stroke: var(--gold); }
+    .expertise-card:hover .expertise-name { color: var(--white); }
+    .expertise-icon { width: 52px; height: 52px; background: var(--gray-100); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; transition: background var(--trans-med); }
+    .expertise-icon svg { width: 22px; height: 22px; }
+    .expertise-icon svg path,.expertise-icon svg rect,.expertise-icon svg circle,.expertise-icon svg polyline,.expertise-icon svg line { stroke: var(--navy); transition: stroke var(--trans-med); }
+    .expertise-name { font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.4; transition: color var(--trans-med); }
+
+    /* TIMELINE */
+    #timeline { background: var(--white); }
+    .timeline-container { position: relative; max-width: 900px; margin: 60px auto 0; }
+    .timeline-line { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, transparent, var(--gold) 5%, var(--gold) 95%, transparent); transform: translateX(-50%); }
+    .timeline-item { display: grid; grid-template-columns: 1fr auto 1fr; gap: 32px; align-items: center; margin-bottom: 40px; }
+    .timeline-item:nth-child(odd) .timeline-content { grid-column: 1; text-align: right; }
+    .timeline-item:nth-child(odd) .timeline-empty { grid-column: 3; }
+    .timeline-item:nth-child(even) .timeline-content { grid-column: 3; text-align: left; }
+    .timeline-item:nth-child(even) .timeline-empty { grid-column: 1; }
+    .timeline-dot { width: 14px; height: 14px; background: var(--gold); border-radius: 50%; border: 3px solid var(--white); box-shadow: 0 0 0 3px var(--gold), var(--shadow-gold); grid-column: 2; flex-shrink: 0; transition: transform var(--trans-med); }
+    .timeline-item:hover .timeline-dot { transform: scale(1.4); }
+    .timeline-card { background: var(--off-white); border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 20px 24px; transition: all var(--trans-med); }
+    .timeline-card:hover { border-color: var(--gold); background: var(--navy); box-shadow: var(--shadow-md); }
+    .timeline-card:hover .tc-company { color: var(--gold); }
+    .timeline-card:hover .tc-role { color: rgba(255,255,255,0.7); }
+    .timeline-card:hover .tc-period { color: rgba(255,255,255,0.35); }
+    .tc-company { font-size: 15px; font-weight: 700; color: var(--text); transition: color var(--trans-med); }
+    .tc-role { font-size: 13px; color: var(--gray-700); margin: 4px 0; transition: color var(--trans-med); }
+    .tc-period { font-size: 11px; color: var(--gray-400); font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--trans-med); }
+
+    /* ACHIEVEMENTS */
+    #achievements { background: linear-gradient(160deg, var(--navy-mid) 0%, var(--navy) 100%); position: relative; overflow: hidden; }
+    #achievements::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 40% at 80% 30%, rgba(200,166,77,0.08) 0%, transparent 60%); pointer-events: none; }
+    .achievements-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 60px; position: relative; z-index: 2; }
+    .achievement-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(200,166,77,0.2); border-radius: var(--radius-lg); padding: 32px 28px; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: all var(--trans-med); }
+    .achievement-card:hover { background: rgba(255,255,255,0.08); border-color: var(--gold); transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+    .achievement-icon { width: 48px; height: 48px; background: rgba(200,166,77,0.15); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 22px; }
+    .achievement-title { font-family: var(--font-display); font-size: 20px; font-weight: 600; color: var(--white); margin-bottom: 10px; line-height: 1.3; }
+    .achievement-desc { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.65; }
+    .achievement-tag { display: inline-block; margin-top: 16px; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); padding: 4px 12px; border: 1px solid rgba(200,166,77,0.3); border-radius: 100px; }
+
+    /* STARTUP */
+    #startup { background: var(--white); }
+    .startup-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .startup-features { display: flex; flex-direction: column; gap: 20px; }
+    .startup-feature { display: flex; gap: 18px; align-items: flex-start; }
+    .sf-icon { width: 40px; height: 40px; background: rgba(15,98,254,0.08); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; }
+    .sf-content h4 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+    .sf-content p { font-size: 14px; color: var(--gray-700); line-height: 1.6; }
+    .startup-visual { background: linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 100%); border-radius: var(--radius-xl); padding: 48px 40px; position: relative; overflow: hidden; }
+    .startup-visual::before { content: ''; position: absolute; top: -40px; right: -40px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(200,166,77,0.15) 0%, transparent 70%); pointer-events: none; }
+    .startup-visual-title { font-family: var(--font-display); font-size: 28px; font-weight: 600; color: var(--white); margin-bottom: 8px; }
+    .startup-visual-sub { font-size: 14px; color: rgba(255,255,255,0.5); margin-bottom: 32px; }
+    .startup-stat-list { display: flex; flex-direction: column; gap: 16px; }
+    .startup-stat-row { display: flex; align-items: center; gap: 14px; }
+    .ssr-bar-wrap { flex: 1; height: 4px; background: rgba(255,255,255,0.08); border-radius: 2px; overflow: hidden; }
+    .ssr-bar { height: 100%; background: linear-gradient(90deg, var(--royal), var(--gold)); border-radius: 2px; transition: width 1.5s cubic-bezier(0.16,1,0.3,1); width: 0; }
+    .ssr-label { font-size: 13px; color: rgba(255,255,255,0.6); width: 140px; }
+    .ssr-pct { font-size: 13px; color: var(--gold); font-weight: 600; width: 36px; text-align: right; }
+
+    /* SPEAKER */
+    #speaker { background: var(--off-white); overflow: hidden; }
+    .speaker-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .speaker-quote-wrap { position: relative; padding: 48px; background: var(--navy); border-radius: var(--radius-xl); overflow: hidden; }
+    .speaker-quote-wrap::before { content: '\201C'; position: absolute; top: -20px; left: 20px; font-family: var(--font-display); font-size: 180px; font-weight: 700; color: rgba(200,166,77,0.08); line-height: 1; pointer-events: none; }
+    .speaker-quote { font-family: var(--font-display); font-size: 28px; font-weight: 400; font-style: italic; color: var(--white); line-height: 1.5; margin-bottom: 24px; position: relative; z-index: 2; }
+    .speaker-quote-attr { font-size: 13px; color: var(--gold); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; position: relative; z-index: 2; }
+    .speaker-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+    .speaker-tag { font-size: 13px; padding: 8px 18px; border-radius: 100px; border: 1px solid var(--gray-200); color: var(--gray-700); font-weight: 500; transition: all var(--trans-fast); }
+    .speaker-tag:hover { border-color: var(--royal); color: var(--royal); }
+
+    /* PR */
+    #pr { background: var(--white); }
+    .pr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 60px; }
+    .pr-card { background: var(--off-white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 36px; transition: all var(--trans-med); }
+    .pr-card:hover { border-color: var(--royal); box-shadow: var(--shadow-md); transform: translateY(-4px); }
+    .pr-card-icon { font-size: 28px; margin-bottom: 18px; }
+    .pr-card h3 { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--navy); margin-bottom: 12px; }
+    .pr-card p { font-size: 15px; color: var(--gray-700); line-height: 1.7; }
+
+    /* TESTIMONIALS */
+    #testimonials { background: var(--off-white); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 60px; }
+    .testimonial-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 36px; transition: all var(--trans-med); position: relative; }
+    .testimonial-card:hover { border-color: var(--gold); box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+    .testimonial-card::before { content: '\201C'; position: absolute; top: 20px; right: 28px; font-family: var(--font-display); font-size: 60px; color: var(--gray-200); line-height: 1; }
+    .testimonial-text { font-size: 16px; line-height: 1.75; color: var(--gray-700); font-style: italic; margin-bottom: 28px; }
+    .testimonial-author { display: flex; align-items: center; gap: 14px; }
+    .testimonial-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--navy); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 18px; font-weight: 600; color: var(--gold); flex-shrink: 0; }
+    .testimonial-name { font-size: 15px; font-weight: 600; color: var(--text); }
+    .testimonial-role { font-size: 12px; color: var(--gray-400); margin-top: 2px; }
+
+    /* BRANDS */
+    #brands { background: var(--white); padding: 80px 0; }
+    .brands-label { text-align: center; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 48px; }
+    .brands-track { overflow: hidden; position: relative; }
+    .brands-track::before,.brands-track::after { content: ''; position: absolute; top: 0; bottom: 0; width: 120px; z-index: 2; pointer-events: none; }
+    .brands-track::before { left: 0; background: linear-gradient(to right, var(--white), transparent); }
+    .brands-track::after { right: 0; background: linear-gradient(to left, var(--white), transparent); }
+    .brands-inner { display: flex; gap: 48px; width: max-content; animation: scroll-brands 20s linear infinite; }
+    .brands-inner:hover { animation-play-state: paused; }
+    @keyframes scroll-brands { 0%{transform:translateX(0);}100%{transform:translateX(-50%);} }
+    .brand-item { display: flex; align-items: center; justify-content: center; padding: 18px 36px; background: var(--off-white); border-radius: var(--radius-md); border: 1px solid var(--gray-200); font-size: 15px; font-weight: 700; color: var(--gray-400); white-space: nowrap; transition: all var(--trans-fast); letter-spacing: 0.04em; }
+    .brand-item:hover { border-color: var(--gold); color: var(--navy); background: var(--white); }
+
+    /* ===========================
+       CONTACT SECTION
+    =========================== */
+    #contact {
+      background: var(--off-white);
+      position: relative;
+      overflow: hidden;
+    }
+    #contact::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(200,166,77,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    #contact::after {
+      content: '';
+      position: absolute;
+      bottom: -60px;
+      left: -60px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(15,98,254,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: start;
+      position: relative;
+      z-index: 2;
+    }
+    .contact-info-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .contact-info-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 36px;
+    }
+    .contact-info-card {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      transition: all var(--trans-med);
+      text-decoration: none;
+      color: inherit;
+    }
+    .contact-info-card:hover {
+      border-color: var(--gold);
+      box-shadow: var(--shadow-md);
+      transform: translateX(6px);
+    }
+    .contact-info-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 20px;
+      transition: background var(--trans-med);
+    }
+    .contact-info-card:hover .contact-info-icon { background: var(--gold); }
+    .contact-info-card:hover .contact-info-icon svg { stroke: var(--navy); }
+    .contact-info-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--gold);
+      fill: none;
+      stroke-width: 1.8;
+      transition: stroke var(--trans-med);
+    }
+    .contact-info-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gray-400);
+      margin-bottom: 3px;
+    }
+    .contact-info-value {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .contact-social-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+    .contact-social-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 20px;
+      border-radius: 100px;
+      border: 1.5px solid var(--gray-200);
+      background: var(--white);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gray-700);
+      transition: all var(--trans-med);
+      text-decoration: none;
+    }
+    .contact-social-btn:hover {
+      border-color: var(--gold);
+      color: var(--navy);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+      transform: translateY(-2px);
+    }
+    .contact-social-btn svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+    .contact-form-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-xl);
+      padding: 44px 40px;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow var(--trans-med);
+    }
+    .contact-form-card:hover { box-shadow: var(--shadow-md); }
+    .contact-form-title {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .contact-form-sub {
+      font-size: 14px;
+      color: var(--gray-400);
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+    .form-group.full { grid-column: 1 / -1; }
+    .form-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gray-700);
+    }
+    .form-input,
+    .form-textarea,
+    .form-select {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1.5px solid var(--gray-200);
+      border-radius: var(--radius-md);
+      font-family: var(--font-body);
+      font-size: 15px;
+      color: var(--text);
+      background: var(--off-white);
+      transition: all var(--trans-fast);
+      outline: none;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+    .form-input:focus,
+    .form-textarea:focus,
+    .form-select:focus {
+      border-color: var(--gold);
+      background: var(--white);
+      box-shadow: 0 0 0 3px rgba(200,166,77,0.12);
+    }
+    .form-input::placeholder,
+    .form-textarea::placeholder { color: var(--gray-400); }
+    .form-textarea {
+      resize: vertical;
+      min-height: 120px;
+      line-height: 1.6;
+    }
+    .form-select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239AA1B4' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 40px;
+      cursor: pointer;
+    }
+    .form-submit-btn {
+      width: 100%;
+      padding: 15px 32px;
+      background: var(--navy);
+      color: var(--white);
+      border: none;
+      border-radius: 100px;
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: all var(--trans-med);
+      margin-top: 6px;
+    }
+    .form-submit-btn:hover {
+      background: var(--gold);
+      color: var(--navy);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-gold);
+    }
+    .form-submit-btn svg {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      transition: transform var(--trans-fast);
+    }
+    .form-submit-btn:hover svg { transform: translateX(4px); }
+    .form-toast {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      margin-top: 16px;
+      padding: 14px 18px;
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .form-toast.success {
+      background: rgba(16,185,129,0.1);
+      border: 1px solid rgba(16,185,129,0.3);
+      color: #065f46;
+      display: flex;
+    }
+    .form-toast.error {
+      background: rgba(239,68,68,0.08);
+      border: 1px solid rgba(239,68,68,0.25);
+      color: #991b1b;
+      display: flex;
+    }
+
+    /* CTA */
+    #cta { background: var(--navy); padding: 120px 0; text-align: center; position: relative; overflow: hidden; }
+    #cta::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 50% 70% at 50% 50%, rgba(15,98,254,0.15) 0%, transparent 70%), radial-gradient(ellipse 30% 30% at 85% 15%, rgba(200,166,77,0.1) 0%, transparent 60%); pointer-events: none; }
+    .cta-label { font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+    .cta-title { font-family: var(--font-display); font-size: clamp(40px, 5vw, 64px); font-weight: 300; color: var(--white); line-height: 1.1; margin-bottom: 16px; position: relative; z-index: 2; }
+    .cta-title strong { font-weight: 700; display: block; background: linear-gradient(135deg, var(--gold), var(--gold-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .cta-sub { font-size: 17px; color: rgba(255,255,255,0.5); margin-bottom: 48px; position: relative; z-index: 2; }
+    .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 2; }
+
+    /* FOOTER */
+    #footer { background: #030D1A; padding: 60px 0 32px; }
+    .footer-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 60px; margin-bottom: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .footer-brand .nav-logo { font-size: 24px; margin-bottom: 14px; display: block; }
+    .footer-brand p { font-size: 14px; color: rgba(255,255,255,0.4); line-height: 1.7; max-width: 260px; }
+    .footer-col h4 { font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a { font-size: 14px; color: rgba(255,255,255,0.45); transition: color var(--trans-fast); }
+    .footer-col ul li a:hover { color: var(--white); }
+    .footer-social { display: flex; gap: 12px; margin-top: 24px; }
+    .social-btn { width: 40px; height: 40px; border-radius: var(--radius-sm); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; transition: all var(--trans-fast); color: rgba(255,255,255,0.5); font-size: 14px; font-weight: 700; }
+    .social-btn:hover { background: var(--gold); border-color: var(--gold); color: var(--navy); }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-copy { font-size: 13px; color: rgba(255,255,255,0.25); }
+    .footer-tagline { font-family: var(--font-display); font-size: 13px; font-style: italic; color: rgba(255,255,255,0.25); }
+
+    /* ===========================
+       RESPONSIVE BREAKPOINTS
+    =========================== */
+
+    /* Large tablet / small laptop (≤1200px) */
+    @media (max-width: 1200px) {
+      .expertise-grid { grid-template-columns: repeat(3, 1fr); }
+      .impact-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    /* =============================================
+       FIX 2 — Navbar: hamburger from 1024px down
+       (was 768px — too late for tablets)
+    ============================================= */
+    @media (max-width: 1024px) {
+      .nav-links { display: none; }
+      .nav-cta  { display: none; }
+      .nav-hamburger { display: flex; }
+    }
+
+    /* Tablet (≤900px) */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns:1fr; gap:25px; text-align:center; }
+      .hero-image-frame { display:flex; justify-content:center; margin-top:30px; }
+      .hero-stats { justify-content: flex-start; }
+      .hero-image-wrap { width:280px; height:380px; margin:auto; }
+      /* Make name-label font a bit smaller on tablet */
+      .name-label { font-size: 1.1rem; padding: 8px 16px; margin: 8px 12px 12px; }
+      .about-grid { grid-template-columns: 1fr; gap: 48px; }
+      .startup-grid { grid-template-columns: 1fr; }
+      .speaker-inner { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; gap: 40px; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .achievements-grid { grid-template-columns: repeat(2, 1fr); }
+      .pr-grid { grid-template-columns: 1fr; }
+      /* FIX 3 — Contact: stack on tablet */
+      .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .contact-form-card { padding: 36px 28px; }
+    }
+
+    /* Mobile landscape / large phone (≤768px) */
+    @media (max-width: 768px) {
+      .container { padding: 0 24px; }
+      .section { padding: 72px 0; }
+      .expertise-header { grid-template-columns: 1fr; gap: 24px; }
+      .expertise-grid { grid-template-columns: repeat(2, 1fr); }
+      .impact-grid { grid-template-columns: repeat(2, 1fr); }
+      .timeline-container { max-width: 100%; }
+      .timeline-line { left: 20px; }
+      .timeline-item { grid-template-columns: 20px 1fr; }
+      .timeline-item:nth-child(odd) .timeline-content { grid-column: 2; text-align: left; }
+      .timeline-item:nth-child(even) .timeline-content { grid-column: 2; text-align: left; }
+      .timeline-item:nth-child(odd) .timeline-empty,.timeline-item:nth-child(even) .timeline-empty { display: none; }
+      .timeline-dot { grid-column: 1; }
+      .achievements-grid { grid-template-columns: 1fr; }
+      .about-pillars { grid-template-columns: 1fr; }
+    }
+
+    /* =============================================
+       FIX 3 — Contact: mobile-specific tweaks
+    ============================================= */
+    @media (max-width: 600px) {
+      .contact-form-card {
+        padding: 24px 18px;
+        border-radius: var(--radius-lg);
+      }
+      .contact-form-title { font-size: 22px; }
+      .contact-form-sub  { font-size: 13px; margin-bottom: 24px; }
+      /* Single-column form fields on mobile */
+      .form-row { grid-template-columns: 1fr; gap: 0; }
+      /* Info cards: tighter on mobile */
+      .contact-info-card { padding: 14px 16px; gap: 12px; }
+      .contact-info-icon { width: 40px; height: 40px; }
+      .contact-info-icon svg { width: 18px; height: 18px; }
+      .contact-info-value { font-size: 13px; word-break: break-all; }
+      /* Social buttons: wrap & shrink */
+      .contact-social-row { gap: 8px; }
+      .contact-social-btn { padding: 9px 14px; font-size: 12px; gap: 7px; }
+      .contact-social-btn svg { width: 14px; height: 14px; }
+    }
+
+    /* Small mobile (≤480px) */
+    @media (max-width: 480px) {
+      .expertise-grid { grid-template-columns: 1fr 1fr; }
+      .hero-stats { flex-direction: column; gap: 20px; }
+      .hero-ctas { flex-direction: column; justify-content: center; }
+      .cta-buttons { flex-direction: column; align-items: center; }
+      /* Hero image card: slightly smaller on tiny screens */
+      .hero-image-wrap { width: 240px; height: 320px; }
+      .name-label { font-size: 1rem; }
+    }
+
+    /* MOBILE MENU */
+    .mobile-nav { position: fixed; top: 0; right: -100%; width: 80%; max-width: 320px; height: 100vh; background: var(--navy); z-index: 9999; padding: 80px 32px 32px; transition: right 0.4s cubic-bezier(0.16,1,0.3,1); border-left: 1px solid rgba(200,166,77,0.15); }
+    .mobile-nav.open { right: 0; }
+    .mobile-nav-close { position: absolute; top: 20px; right: 20px; color: var(--white); font-size: 24px; cursor: pointer; }
+    .mobile-nav ul { list-style: none; }
+    .mobile-nav ul li { margin-bottom: 8px; }
+    .mobile-nav ul li a { font-size: 16px; color: rgba(255,255,255,0.7); padding: 12px 0; display: block; border-bottom: 1px solid rgba(255,255,255,0.05); transition: color var(--trans-fast); }
+    .mobile-nav ul li a:hover { color: var(--gold); }
+    .mobile-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 9998; }
+    .mobile-overlay.visible { display: block; }
+
+    /* SCROLL TO TOP */
+    #scrollTopBtn { position:fixed; bottom:35px; right:35px; width:62px; height:62px; border:none; border-radius:50%; cursor:pointer; display:flex; justify-content:center; align-items:center; z-index:9999; opacity:0; visibility:hidden; transform:translateY(30px) scale(.8); transition:.45s cubic-bezier(.23,1,.32,1); background:rgb(0,55,255); backdrop-filter:blur(16px); border:2px solid rgb(252,181,1); box-shadow:0 0 15px rgba(255,183,0,0.25),0 0 30px rgba(15,98,254,.18); }
+    #scrollTopBtn.show { opacity:1; visibility:visible; transform:translateY(0) scale(1); }
+    #scrollTopBtn svg { width:24px; height:24px; stroke:#ffb701; stroke-width:2.5; fill:none; transition:.35s; }
+    #scrollTopBtn:hover { transform:translateY(-6px) scale(1.08); background:#051f4f; border-color:#ffb700; box-shadow:0 0 25px rgba(255,183,0,0.6),0 0 60px rgba(15,98,254,.45); }
+    #scrollTopBtn:hover svg { stroke:#ffffff; }
+    #scrollTopBtn:active { transform:scale(.92); }
+    @keyframes floatArrow { 0%,100%{transform:translateY(0);}50%{transform:translateY(-7px);} }
+    #scrollTopBtn.show { animation:floatArrow 2.8s ease-in-out infinite; }
+    #scrollTopBtn::before { content:""; position:absolute; inset:-6px; border-radius:50%; border:2px dashed rgb(255,183,1); animation:rotateRing 12s linear infinite; }
+    @keyframes rotateRing { from{transform:rotate(0deg);}to{transform:rotate(360deg);} }
+    #scrollTopBtn::after { content:""; position:absolute; width:100%; height:100%; border-radius:50%; border:2px solid rgb(255,183,0); animation:pulseRing 2s infinite; }
+    @keyframes pulseRing { 0%{transform:scale(1);opacity:.8;}100%{transform:scale(1.45);opacity:0;} }
+    @media(max-width:768px){ #scrollTopBtn{width:55px;height:55px;right:20px;bottom:20px;} }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Manjula Subhash Nair">MSN<span>.</span></a>
+      <ul class="nav-links" role="list">
+        <span class="nav-indicator"></span>
+        <li><a href="#hero">HOME</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#timeline">Journey</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cta" class="nav-cta">Book Consultation</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Open menu" onclick="openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("section");
+      const links = document.querySelectorAll(".nav-links a");
+      const indicator = document.querySelector(".nav-indicator");
+      function moveIndicator(link){ indicator.style.width = link.offsetWidth + "px"; indicator.style.left = link.offsetLeft + "px"; }
+      function updateActive(){
+        let current = "";
+        sections.forEach(section=>{ const top = section.offsetTop - 180; if(window.scrollY >= top){ current = section.id; } });
+        links.forEach(link=>{ link.classList.remove("active"); if(link.getAttribute("href")==="#" + current){ link.classList.add("active"); moveIndicator(link); } });
+      }
+      updateActive();
+      window.addEventListener("scroll", updateActive);
+      window.addEventListener("resize",()=>{ const active=document.querySelector(".nav-links a.active"); if(active){ moveIndicator(active); } });
+    });
+  </script>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileNav()"></div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" onclick="closeMobileNav()" aria-label="Close menu">✕</button>
+    <ul>
+      <li><a href="#hero" onclick="closeMobileNav()">Home</a></li>
+      <li><a href="#about" onclick="closeMobileNav()">About</a></li>
+      <li><a href="#expertise" onclick="closeMobileNav()">Expertise</a></li>
+      <li><a href="#timeline" onclick="closeMobileNav()">Career Journey</a></li>
+      <li><a href="#achievements" onclick="closeMobileNav()">Achievements</a></li>
+      <li><a href="#startup" onclick="closeMobileNav()">Startup Impact</a></li>
+      <li><a href="#testimonials" onclick="closeMobileNav()">Testimonials</a></li>
+      <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" aria-label="Hero section">
+    <div class="hero-gradient"></div>
+    <div class="hero-grid-pattern"></div>
+    <div class="floating-icon fi-1" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#C8A64D" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    </div>
+    <div class="floating-icon fi-2" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#C8A64D" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    </div>
+    <div class="floating-icon fi-3" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#C8A64D" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-eyebrow reveal">India's Leading CMO & Brand Strategist</div>
+        <h1 class="hero-headline reveal reveal-delay-1">
+          Building Brands.<br>
+          <strong>Creating Market Leaders.</strong>
+          <em>Transforming Businesses.</em>
+        </h1>
+        <div class="hero-roles reveal reveal-delay-2">
+          <span class="hero-role-tag hs-shine">Marketing Strategist</span>
+          <span class="hero-role-tag hs-shine">PR Expert</span>
+          <span class="hero-role-tag hs-shine">GTM Consultant</span>
+          <span class="hero-role-tag hs-shine">Startup Mentor</span>
+          <span class="hero-role-tag">Speaker</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="#achievements" class="btn-primary">
+            View Portfolio
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://group1-website.netlify.app/#contact" target="_blank" rel="noopener noreferrer" class="btn-outline">
+            Book a Consultation
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats reveal reveal-delay-4">
+          <div class="hero-stat">
+            <div class="hero-stat-number"><span class="counter" data-target="25">0</span><span>+</span></div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number"><span class="counter" data-target="10000">0</span><span>+</span></div>
+            <div class="hero-stat-label">Startups Mentored</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number"><span class="counter" data-target="100">0</span><span>+</span></div>
+            <div class="hero-stat-label">Media Features</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-frame reveal reveal-delay-2">
+        <div class="hero-image-wrap">
+          <div class="hero-image-placeholder">
+            <img src="Manjula Subhash (Manjotra) Nair.jpeg" alt="Manjula Subhash Nair" class="hero-image">
+            <div class="name-label hs-shine">Manjula Subhash Nair</div>
+          </div>
+        </div>
+        <div class="hero-image-badge">Founder · Global CMO Partners</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT COUNTERS -->
+  <section id="impact" aria-label="Impact statistics">
+    <div class="container">
+      <div class="impact-grid">
+        <div class="impact-item reveal"><div class="impact-number"><span class="counter" data-target="25">0</span><span class="suffix">+</span></div><div class="impact-label">Years Experience</div></div>
+        <div class="impact-item reveal reveal-delay-1"><div class="impact-number"><span class="counter" data-target="10000">0</span><span class="suffix">+</span></div><div class="impact-label">Startups & SMEs Mentored</div></div>
+        <div class="impact-item reveal reveal-delay-2"><div class="impact-number"><span class="counter" data-target="100">0</span><span class="suffix">+</span></div><div class="impact-label">Media Features</div></div>
+        <div class="impact-item reveal reveal-delay-3"><div class="impact-number"><span class="counter" data-target="1000">0</span><span class="suffix">+</span></div><div class="impact-label">Businesses Guided</div></div>
+        <div class="impact-item reveal reveal-delay-4"><div class="impact-number"><span class="counter" data-target="4">0</span></div><div class="impact-label">Fortune 500 Employers</div></div>
+        <div class="impact-item reveal reveal-delay-5"><div class="impact-number"><span class="counter" data-target="2">0</span></div><div class="impact-label">Companies Founded</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section" aria-label="About Manjula Subhash Nair">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <span class="section-label reveal">Biography</span>
+          <h2 class="section-title reveal reveal-delay-1">Who is Manjula Subhash Nair?</h2>
+          <div class="about-text reveal reveal-delay-2">
+            <p>Manjula Subhash Nair is one of India's foremost authorities on marketing, brand strategy, and corporate communications — a professional with more than 25 years of experience navigating some of the most complex business environments in the technology and services sectors.</p>
+            <p>Her career spans senior leadership roles at global organisations including Hewlett Packard, Sapient, Satyam Computers, and Amdocs — institutions where she honed a distinctive ability to align marketing strategy with business outcomes at scale. Her involvement during the Satyam crisis period stands as a testament to her expertise in crisis communications and corporate reputation management under exceptional pressure.</p>
+            <p>Driven by a conviction that marketing's highest purpose is to create sustainable business growth, Manjula transitioned from corporate leadership to entrepreneurship — founding <strong>Global CMO Partners</strong> and <strong>Creative Bharat</strong> to serve startups, SMEs, and enterprises seeking strategic marketing counsel and communications expertise.</p>
+            <p>Alongside her consulting work, she serves as a Professor of Practice teaching Entrepreneurship & Innovation at COEP's Bhau Institute and NICMAR University, bringing real-world marketing rigour into academic programmes. She is also a recognised mentor at Stanford SEED and regularly contributes to industry discourse as a speaker and panelist at national conferences and innovation summits.</p>
+          </div>
+          <div class="about-pillars reveal reveal-delay-3">
+            <div class="about-pillar"><span class="pillar-dot"></span>Strategic Marketing</div>
+            <div class="about-pillar"><span class="pillar-dot"></span>Brand Architecture</div>
+            <div class="about-pillar"><span class="pillar-dot"></span>Corporate Communications</div>
+            <div class="about-pillar"><span class="pillar-dot"></span>Crisis Management</div>
+          </div>
+        </div>
+        <div class="about-right">
+          <span class="section-label reveal">Career Highlights</span>
+          <div class="about-companies reveal reveal-delay-1">
+            <div class="about-company-card"><div class="company-icon">HP</div><div><div class="company-name">Hewlett Packard</div><div class="company-role">Senior Marketing Leadership</div></div></div>
+            <div class="about-company-card"><div class="company-icon">SAP</div><div><div class="company-name">Sapient</div><div class="company-role">Corporate Marketing & Communications</div></div></div>
+            <div class="about-company-card"><div class="company-icon">SC</div><div><div class="company-name">Satyam Computers</div><div class="company-role">Marketing Strategy & PR</div></div></div>
+            <div class="about-company-card"><div class="company-icon">AM</div><div><div class="company-name">Amdocs</div><div class="company-role">Marketing & Brand Management</div></div></div>
+            <div class="about-company-card"><div class="company-icon" style="background:var(--gold);color:var(--navy);">GC</div><div><div class="company-name">Global CMO Partners</div><div class="company-role">Founder & Chief Strategist</div></div></div>
+            <div class="about-company-card"><div class="company-icon" style="background:var(--gold);color:var(--navy);">CB</div><div><div class="company-name">Creative Bharat</div><div class="company-role">Founder & Director</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section id="expertise" class="section" aria-label="Areas of expertise">
+    <div class="container">
+      <div class="expertise-header">
+        <div>
+          <span class="section-label reveal">Core Competencies</span>
+          <h2 class="section-title reveal reveal-delay-1">Areas of<br>Deep Expertise</h2>
+        </div>
+        <p class="section-subtitle reveal reveal-delay-2">A comprehensive portfolio of strategic capabilities developed across 25+ years at the intersection of business, brand, and communications.</p>
+      </div>
+      <div class="expertise-grid">
+        <div class="expertise-card reveal"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div><div class="expertise-name">360° Marketing</div></div>
+        <div class="expertise-card reveal reveal-delay-1"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><div class="expertise-name">Brand Strategy</div></div>
+        <div class="expertise-card reveal reveal-delay-2"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="expertise-name">Corporate Communications</div></div>
+        <div class="expertise-card reveal reveal-delay-3"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><div class="expertise-name">Public Relations</div></div>
+        <div class="expertise-card reveal reveal-delay-4"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div class="expertise-name">Digital Marketing</div></div>
+        <div class="expertise-card reveal"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div><div class="expertise-name">Go-To-Market Strategy</div></div>
+        <div class="expertise-card reveal reveal-delay-1"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg></div><div class="expertise-name">Sales Enablement</div></div>
+        <div class="expertise-card reveal reveal-delay-2"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="expertise-name">Leadership Branding</div></div>
+        <div class="expertise-card reveal reveal-delay-3"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="expertise-name">Corporate Reputation</div></div>
+        <div class="expertise-card reveal reveal-delay-4"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="expertise-name">Employer Branding</div></div>
+        <div class="expertise-card reveal"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="expertise-name">Media Relations</div></div>
+        <div class="expertise-card reveal reveal-delay-1"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></div><div class="expertise-name">Startup Growth</div></div>
+        <div class="expertise-card reveal reveal-delay-2"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><div class="expertise-name">Business Consulting</div></div>
+        <div class="expertise-card reveal reveal-delay-3"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="expertise-name">Corporate Training</div></div>
+        <div class="expertise-card reveal reveal-delay-4"><div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div class="expertise-name">Innovation Strategy</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline" class="section" aria-label="Career journey timeline">
+    <div class="container">
+      <div style="text-align:center;max-width:600px;margin:0 auto;">
+        <span class="section-label reveal">Career Journey</span>
+        <h2 class="section-title reveal reveal-delay-1">From Advertising Halls to<br>Building India's Brands</h2>
+        <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto;">A 25-year arc of consistent growth — from media and advertising foundations to global corporate leadership, and ultimately to entrepreneurial impact.</p>
+      </div>
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <div class="timeline-item reveal"><div class="timeline-content"><div class="timeline-card"><div class="tc-company">Advertising & Media</div><div class="tc-role">Communications & Brand Foundations</div><div class="tc-period">Career Beginnings</div></div></div><div class="timeline-dot"></div><div class="timeline-empty"></div></div>
+        <div class="timeline-item reveal reveal-delay-1"><div class="timeline-empty"></div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-card"><div class="tc-company">141 Sercon (Publicis Group)</div><div class="tc-role">Brand & Creative Communications</div><div class="tc-period">Early Career</div></div></div></div>
+        <div class="timeline-item reveal reveal-delay-2"><div class="timeline-content"><div class="timeline-card"><div class="tc-company">Hewlett Packard (GDIC)</div><div class="tc-role">Senior Marketing Leadership</div><div class="tc-period">Global Corporate Experience</div></div></div><div class="timeline-dot"></div><div class="timeline-empty"></div></div>
+        <div class="timeline-item reveal reveal-delay-3"><div class="timeline-empty"></div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-card"><div class="tc-company">Sapient</div><div class="tc-role">Corporate Marketing & Communications</div><div class="tc-period">Strategic Leadership</div></div></div></div>
+        <div class="timeline-item reveal reveal-delay-4"><div class="timeline-content"><div class="timeline-card"><div class="tc-company">Mahindra Satyam (formerly Satyam)</div><div class="tc-role">Marketing Strategy & Crisis Communications</div><div class="tc-period">Corporate Leadership</div></div></div><div class="timeline-dot"></div><div class="timeline-empty"></div></div>
+        <div class="timeline-item reveal"><div class="timeline-empty"></div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-card"><div class="tc-company">Amdocs</div><div class="tc-role">Marketing & Brand Management</div><div class="tc-period">Enterprise Leadership</div></div></div></div>
+        <div class="timeline-item reveal reveal-delay-1"><div class="timeline-content"><div class="timeline-card" style="border-color:var(--gold);background:var(--navy);"><div class="tc-company" style="color:var(--gold);">Global CMO Partners</div><div class="tc-role" style="color:rgba(255,255,255,0.7);">Founder & Chief Marketing Strategist</div><div class="tc-period" style="color:rgba(255,255,255,0.4);">Entrepreneurship</div></div></div><div class="timeline-dot"></div><div class="timeline-empty"></div></div>
+        <div class="timeline-item reveal reveal-delay-2"><div class="timeline-empty"></div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-card" style="border-color:var(--gold);background:var(--navy);"><div class="tc-company" style="color:var(--gold);">Creative Bharat</div><div class="tc-role" style="color:rgba(255,255,255,0.7);">Founder & Director — Media & Publication Platform</div><div class="tc-period" style="color:rgba(255,255,255,0.4);">Creative Leadership</div></div></div></div>
+        <div class="timeline-item reveal reveal-delay-3"><div class="timeline-content"><div class="timeline-card"><div class="tc-company">NICMAR University</div><div class="tc-role">Corporate Communications Consultant & Faculty</div><div class="tc-period">Academia</div></div></div><div class="timeline-dot"></div><div class="timeline-empty"></div></div>
+        <div class="timeline-item reveal reveal-delay-4"><div class="timeline-empty"></div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-card"><div class="tc-company">COEP Bhau Institute · Stanford SEED Mentor · Speaker</div><div class="tc-role">Professor of Practice — Entrepreneurship & Innovation · Industry Mentor · Keynote Speaker</div><div class="tc-period">Present</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section" aria-label="Awards and achievements">
+    <div class="container">
+      <div style="text-align:center;max-width:600px;margin:0 auto;">
+        <span class="section-label reveal" style="color:var(--gold);">Recognition</span>
+        <h2 class="section-title light reveal reveal-delay-1">Awards & Professional Recognition</h2>
+        <p class="section-subtitle light reveal reveal-delay-2" style="margin:0 auto;">A record of sustained excellence recognised by industry peers, academic institutions, and national platforms.</p>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal"><div class="achievement-icon">🏆</div><div class="achievement-title">Women CMO of the Year 2016</div><div class="achievement-desc">Recognised as one of India's outstanding women marketing leaders by the Indian Women Empowerment & Leadership Summit for sustained strategic contributions to corporate marketing and brand-building.</div><div class="achievement-tag">Marketing Excellence</div></div>
+        <div class="achievement-card reveal reveal-delay-1"><div class="achievement-icon">⭐</div><div class="achievement-title">Most Talented Marketing Professional</div><div class="achievement-desc">Honoured for innovative marketing methodology and measurable business impact across technology and services sectors spanning over two decades.</div><div class="achievement-tag">Industry Award</div></div>
+        <div class="achievement-card reveal reveal-delay-2"><div class="achievement-icon">🎓</div><div class="achievement-title">Professor of Practice</div><div class="achievement-desc">Appointed as Professor of Practice — Entrepreneurship & Innovation at COEP's Bhau Institute and NICMAR University, bridging academic theory with real-world strategic implementation.</div><div class="achievement-tag">Academia</div></div>
+        <div class="achievement-card reveal reveal-delay-3"><div class="achievement-icon">📢</div><div class="achievement-title">Top Industry Speaker</div><div class="achievement-desc">Invited to address national conferences, innovation summits, startup festivals, and corporate leadership forums including Business EmpowerHer25 at The Orchid Hotel, Pune.</div><div class="achievement-tag">Thought Leadership</div></div>
+        <div class="achievement-card reveal reveal-delay-4"><div class="achievement-icon">🛡️</div><div class="achievement-title">Crisis Communications Leadership</div><div class="achievement-desc">Demonstrated exceptional leadership during the Satyam Computers corporate crisis — a defining moment that established her reputation for strategic communications under pressure, facilitating Mahindra's acquisition.</div><div class="achievement-tag">Corporate Reputation</div></div>
+        <div class="achievement-card reveal reveal-delay-5"><div class="achievement-icon">🚀</div><div class="achievement-title">Startup Ecosystem Champion</div><div class="achievement-desc">Stanford SEED Mentor and jury member at COEP Bhau Institute Ideathon, BMCC VentureVerse, and Biznovation 2.0 — recognised for sustained mentorship supporting over 10,000 founders.</div><div class="achievement-tag">Entrepreneurship</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STARTUP IMPACT -->
+  <section id="startup" class="section" aria-label="Startup impact">
+    <div class="container">
+      <div class="startup-grid">
+        <div>
+          <span class="section-label reveal">Startup Ecosystem</span>
+          <h2 class="section-title reveal reveal-delay-1">Helping Founders Build Businesses That Last</h2>
+          <p class="section-subtitle reveal reveal-delay-2">Beyond strategy consulting, Manjula brings a founder-first mindset to every engagement — understanding that startups need marketing that works now, not frameworks that arrive too late.</p>
+          <div class="startup-features reveal reveal-delay-3">
+            <div class="startup-feature"><div class="sf-icon">🎯</div><div class="sf-content"><h4>Go-To-Market Strategy</h4><p>Designing precise GTM frameworks that align product positioning with market readiness and buyer behaviour.</p></div></div>
+            <div class="startup-feature"><div class="sf-icon">📣</div><div class="sf-content"><h4>PR & Media Visibility</h4><p>Building earned media presence and thought leadership that creates genuine market credibility for early-stage brands.</p></div></div>
+            <div class="startup-feature"><div class="sf-icon">💼</div><div class="sf-content"><h4>Investor Readiness</h4><p>Sharpening brand narrative and pitch positioning so that investors understand both the business and the market opportunity with clarity.</p></div></div>
+            <div class="startup-feature"><div class="sf-icon">🌱</div><div class="sf-content"><h4>Brand Architecture</h4><p>Establishing brand foundations — identity, positioning, and communication architecture — that scale as the business grows.</p></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="startup-visual reveal reveal-delay-2">
+            <div class="startup-visual-title">Impact Across Stages</div>
+            <div class="startup-visual-sub">Businesses supported by stage of growth</div>
+            <div class="startup-stat-list">
+              <div class="startup-stat-row"><div class="ssr-label">Early-Stage Startups</div><div class="ssr-bar-wrap"><div class="ssr-bar" data-width="92"></div></div><div class="ssr-pct">92%</div></div>
+              <div class="startup-stat-row"><div class="ssr-label">Growth-Stage SMEs</div><div class="ssr-bar-wrap"><div class="ssr-bar" data-width="78"></div></div><div class="ssr-pct">78%</div></div>
+              <div class="startup-stat-row"><div class="ssr-label">Corporate Enterprises</div><div class="ssr-bar-wrap"><div class="ssr-bar" data-width="65"></div></div><div class="ssr-pct">65%</div></div>
+              <div class="startup-stat-row"><div class="ssr-label">GTM Strategy</div><div class="ssr-bar-wrap"><div class="ssr-bar" data-width="88"></div></div><div class="ssr-pct">88%</div></div>
+              <div class="startup-stat-row"><div class="ssr-label">Brand Positioning</div><div class="ssr-bar-wrap"><div class="ssr-bar" data-width="95"></div></div><div class="ssr-pct">95%</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEAKER -->
+  <section id="speaker" class="section" aria-label="Speaking and thought leadership">
+    <div class="container">
+      <div class="speaker-inner">
+        <div class="speaker-content">
+          <span class="section-label reveal">Thought Leadership</span>
+          <h2 class="section-title reveal reveal-delay-1">Speaking at the Intersection of Marketing, Business & Innovation</h2>
+          <p class="section-subtitle reveal reveal-delay-2">Manjula brings perspective shaped by 25+ years at the front lines of corporate marketing — speaking not from theory, but from the practitioner's experience of what actually builds lasting brands.</p>
+          <div class="speaker-tags reveal reveal-delay-3">
+            <span class="speaker-tag">Startup Summits</span>
+            <span class="speaker-tag">Corporate Events</span>
+            <span class="speaker-tag">Universities</span>
+            <span class="speaker-tag">Panel Discussions</span>
+            <span class="speaker-tag">Innovation Conferences</span>
+            <span class="speaker-tag">Leadership Forums</span>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="speaker-quote-wrap">
+            <blockquote class="speaker-quote">"Marketing is not about selling. It is about creating meaningful business growth."</blockquote>
+            <div class="speaker-quote-attr">— Manjula Subhash Nair</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PR PHILOSOPHY -->
+  <section id="pr" class="section" aria-label="Public relations philosophy">
+    <div class="container">
+      <div style="max-width:600px;">
+        <span class="section-label reveal">PR Philosophy</span>
+        <h2 class="section-title reveal reveal-delay-1">Reputation Is Built in the Ordinary Moments, Not Just the Crises</h2>
+        <p class="section-subtitle reveal reveal-delay-2">Her approach to public relations is rooted in one conviction: trust is an asset built consistently, not a problem solved reactively.</p>
+      </div>
+      <div class="pr-grid">
+        <div class="pr-card reveal"><div class="pr-card-icon">🤝</div><h3>Trust Architecture</h3><p>Every communications programme begins with a deliberate trust architecture — mapping stakeholder perceptions, identifying narrative gaps, and building a communications cadence that closes the distance between brand promise and market reality.</p></div>
+        <div class="pr-card reveal reveal-delay-1"><div class="pr-card-icon">📰</div><h3>Media Relations</h3><p>Cultivating genuine, long-term relationships with media across business, technology, and industry beats — so that when a story needs to be told, the right platforms are already listening.</p></div>
+        <div class="pr-card reveal reveal-delay-2"><div class="pr-card-icon">🔥</div><h3>Crisis Communications</h3><p>Having navigated high-stakes corporate communications scenarios — including the Satyam crisis — she brings a tested methodology for protecting brand reputation when it is most under pressure.</p></div>
+        <div class="pr-card reveal reveal-delay-3"><div class="pr-card-icon">👁️</div><h3>Executive Visibility</h3><p>Building the public profile of business leaders so that their visibility becomes a business asset — positioning executives as authoritative voices in their industry through speaking, writing, and media engagement.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section" aria-label="Testimonials">
+    <div class="container">
+      <div style="text-align:center;max-width:600px;margin:0 auto;">
+        <span class="section-label reveal">What They Say</span>
+        <h2 class="section-title reveal reveal-delay-1">Voices From the Ecosystem</h2>
+        <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto;">Perspectives from founders, executives, academics, and mentees throughout her career.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal"><p class="testimonial-text">"The GTM strategy she designed for our early-stage venture was not a generic template — it was built around our specific market, our specific constraints, and our specific opportunities. It gave us the clarity we needed to move from product to business."</p><div class="testimonial-author"><div class="testimonial-avatar">SF</div><div><div class="testimonial-name">Startup Founder</div><div class="testimonial-role">B2B SaaS, Bengaluru</div></div></div></div>
+        <div class="testimonial-card reveal reveal-delay-1"><p class="testimonial-text">"What sets Manjula apart is that she understands both the boardroom and the market. Her communications advice during a particularly difficult period for our company was grounded in experience — not just theory — and it made all the difference."</p><div class="testimonial-author"><div class="testimonial-avatar">CE</div><div><div class="testimonial-name">Corporate Executive</div><div class="testimonial-role">Technology Services, India</div></div></div></div>
+        <div class="testimonial-card reveal reveal-delay-2"><p class="testimonial-text">"As a Professor of Practice, she brings something classroom instruction rarely offers: the texture of real decisions, real pressures, and real outcomes. Every session fundamentally changed how I think about marketing as a strategic function."</p><div class="testimonial-author"><div class="testimonial-avatar">S</div><div><div class="testimonial-name">MBA Student</div><div class="testimonial-role">Management Programme, Pune</div></div></div></div>
+        <div class="testimonial-card reveal reveal-delay-3"><p class="testimonial-text">"She didn't just help us with positioning — she helped us see that brand strategy and business strategy are the same thing. That insight transformed how we built our company, from hiring to product to how we show up in the market."</p><div class="testimonial-author"><div class="testimonial-avatar">E</div><div><div class="testimonial-name">Entrepreneur</div><div class="testimonial-role">D2C Brand, Maharashtra</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section id="brands" aria-label="Organisations worked with">
+    <div class="container">
+      <div class="brands-label reveal">Organisations Worked With</div>
+      <div class="brands-track reveal reveal-delay-1">
+        <div class="brands-inner" id="brandsInner">
+          <div class="brand-item">Hewlett Packard</div>
+          <div class="brand-item">Sapient</div>
+          <div class="brand-item">Mahindra Satyam</div>
+          <div class="brand-item">Amdocs</div>
+          <div class="brand-item">Global CMO Partners</div>
+          <div class="brand-item">Creative Bharat</div>
+          <div class="brand-item">141 Sercon</div>
+          <div class="brand-item">NICMAR University</div>
+          <div class="brand-item">Stanford SEED</div>
+          <div class="brand-item">COEP Bhau Institute</div>
+          <div class="brand-item">Hewlett Packard</div>
+          <div class="brand-item">Sapient</div>
+          <div class="brand-item">Mahindra Satyam</div>
+          <div class="brand-item">Amdocs</div>
+          <div class="brand-item">Global CMO Partners</div>
+          <div class="brand-item">Creative Bharat</div>
+          <div class="brand-item">141 Sercon</div>
+          <div class="brand-item">NICMAR University</div>
+          <div class="brand-item">Stanford SEED</div>
+          <div class="brand-item">COEP Bhau Institute</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section" aria-label="Contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- LEFT: Info Panel -->
+        <div class="contact-info-panel">
+          <span class="section-label reveal">Get In Touch</span>
+          <h2 class="section-title reveal reveal-delay-1">Let's Build Something<br>Great Together</h2>
+          <p class="section-subtitle reveal reveal-delay-2">Whether you're a startup founder seeking GTM clarity, a brand ready for transformation, or an organisation looking for a keynote speaker — Manjula is here to help.</p>
+
+          <div class="contact-info-cards reveal reveal-delay-3">
+            <a href="tel:+919767517766" class="contact-info-card">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.17h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.74a16 16 0 0 0 6.29 6.29l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Phone</div>
+                <div class="contact-info-value">+91 97675 17766</div>
+              </div>
+            </a>
+
+            <a href="mailto:manjulasubhash.author@gmail.com" class="contact-info-card">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <div class="contact-info-value">manjulasubhash.author@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/manjulasubhashnair/" target="_blank" rel="noopener noreferrer" class="contact-info-card">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <div class="contact-info-label">LinkedIn</div>
+                <div class="contact-info-value">linkedin.com/in/manjulasubhashnair</div>
+              </div>
+            </a>
+
+            <a href="https://creativebharat.com" target="_blank" rel="noopener noreferrer" class="contact-info-card">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Website</div>
+                <div class="contact-info-value">creativebharat.com</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-social-row reveal reveal-delay-4">
+            <a href="https://www.linkedin.com/in/manjulasubhashnair/" target="_blank" rel="noopener noreferrer" class="contact-social-btn">
+              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://www.instagram.com/socially_manjulasubhash/" target="_blank" rel="noopener noreferrer" class="contact-social-btn">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Instagram
+            </a>
+            <a href="https://www.youtube.com/@creativebharat-news" target="_blank" rel="noopener noreferrer" class="contact-social-btn">
+              <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+              YouTube
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Form Card -->
+        <div class="contact-form-card reveal reveal-delay-2">
+          <div class="contact-form-title">Send a Message</div>
+          <div class="contact-form-sub">Fill in the form and you'll be redirected to our contact page to complete your enquiry.</div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="fname">First Name</label>
+                <input class="form-input" type="text" id="fname" name="fname" placeholder="Rahul" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lname">Last Name</label>
+                <input class="form-input" type="text" id="lname" name="lname" placeholder="Sharma" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="rahul@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="+91 98765 43210" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="service">What can I help you with?</label>
+              <select class="form-select form-input" id="service" name="service">
+                <option value="" disabled selected>Select a service</option>
+                <option value="gtm">Go-To-Market Strategy</option>
+                <option value="brand">Brand Strategy & Positioning</option>
+                <option value="pr">Public Relations & Media</option>
+                <option value="speaking">Speaking Engagement</option>
+                <option value="mentorship">Startup Mentorship</option>
+                <option value="training">Corporate Training</option>
+                <option value="other">Other / General Enquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell me a little about your business and what you're looking to achieve..." required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit-btn">
+              Send Message
+              <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+
+            <div class="form-toast" id="formToast"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" aria-label="Call to action">
+    <div class="container">
+      <div class="cta-label reveal">Ready to Grow?</div>
+      <h2 class="cta-title reveal reveal-delay-1">Ready to Transform<br><strong>Your Brand?</strong></h2>
+      <p class="cta-sub reveal reveal-delay-2">Let's build your growth story together.</p>
+      <div class="cta-buttons reveal reveal-delay-3">
+        <a href="https://group1-website.netlify.app/#contact" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Schedule Consultation
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/manjulasubhashnair/" target="_blank" rel="noopener noreferrer" class="btn-outline">
+          Connect on LinkedIn
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" aria-label="Footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="nav-logo">MSN<span>.</span></span>
+          <p>Marketing Strategist. Brand Builder. Startup Mentor. Thought Leader. Shaping businesses that endure.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/manjulasubhashnair/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">in</a>
+            <a href="https://creativebharat.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Creative Bharat">W</a>
+            <a href="https://www.instagram.com/socially_manjulasubhash/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#timeline">Career Journey</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#startup">Startup Impact</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Engage</h4>
+          <ul>
+            <li><a href="https://group1-website.netlify.app/#contact" target="_blank">Book a Consultation</a></li>
+            <li><a href="#speaker">Speaking Enquiries</a></li>
+            <li><a href="#pr">PR Services</a></li>
+            <li><a href="mailto:manjulasubhash.author@gmail.com">Email</a></li>
+            <li><a href="tel:+919767517766">Call: +91 97675 17766</a></li>
+          </ul>
+          <div style="margin-top:28px;">
+            <div style="font-size:12px;color:rgba(255,255,255,0.25);margin-bottom:6px;letter-spacing:0.1em;text-transform:uppercase;">Ventures</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.45);margin-bottom:6px;">Global CMO Partners</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.45);">Creative Bharat</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">&copy; 2026 Manjula Subhash Nair. All rights reserved.</div>
+        <div class="footer-tagline">"Building Brands. Creating Market Leaders. Transforming Businesses."</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button id="scrollTopBtn" aria-label="Scroll to Top">
+    <svg viewBox="0 0 24 24"><path d="M12 19V5"></path><path d="M5 12l7-7 7 7"></path></svg>
+  </button>
+
+  <script>
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 60); }, { passive: true });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // Animated counters
+    function animateCounter(el) {
+      const target = parseInt(el.getAttribute('data-target'));
+      const duration = 1800;
+      const start = performance.now();
+      function update(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const value = Math.round(eased * target);
+        el.textContent = value >= 1000 ? value.toLocaleString() : value;
+        if (progress < 1) requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
+    }
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.querySelectorAll('.counter').forEach(animateCounter); counterObserver.unobserve(entry.target); } });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('#impact, #hero').forEach(s => counterObserver.observe(s));
+
+    // Skill bars
+    const barObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.querySelectorAll('.ssr-bar').forEach(bar => { bar.style.width = bar.getAttribute('data-width') + '%'; }); barObserver.unobserve(entry.target); } });
+    }, { threshold: 0.4 });
+    const startupVisual = document.querySelector('.startup-visual');
+    if (startupVisual) barObserver.observe(startupVisual);
+
+    // Mobile nav
+    function openMobileNav() { document.getElementById('mobileNav').classList.add('open'); document.getElementById('mobileOverlay').classList.add('visible'); document.body.style.overflow = 'hidden'; }
+    function closeMobileNav() { document.getElementById('mobileNav').classList.remove('open'); document.getElementById('mobileOverlay').classList.remove('visible'); document.body.style.overflow = ''; }
+
+    // Reduced motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (prefersReducedMotion.matches) {
+      document.querySelectorAll('.floating-icon').forEach(el => el.style.animation = 'none');
+      document.querySelectorAll('.brands-inner').forEach(el => el.style.animation = 'none');
+    }
+
+    // Scroll to top
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    window.addEventListener("scroll", () => { scrollBtn.classList.toggle("show", window.scrollY > 350); });
+    scrollBtn.addEventListener("click", () => { window.scrollTo({ top: 0, behavior: "smooth" }); });
+
+    // Contact form
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const fname = document.getElementById('fname').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const toast = document.getElementById('formToast');
+
+      if (!fname || !email || !message) {
+        toast.className = 'form-toast error';
+        toast.textContent = '⚠️ Please fill in your name, email, and message before sending.';
+        return;
+      }
+
+      toast.className = 'form-toast success';
+      toast.textContent = '✓ Redirecting you to the contact page…';
+
+      setTimeout(() => {
+        window.open('https://group1-website.netlify.app/#contact', '_blank');
+      }, 900);
+    });
+  </script>
+
+</body>
+</html>
